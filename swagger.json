@@ -1,0 +1,6 @@
+{
+  "library": "jersey2",
+  "modelPackage": "org.semux.sdk.client.model",
+  "apiPackage": "org.semux.sdk.client.api",
+  "hideGenerationTimestamp": "true"
+}
