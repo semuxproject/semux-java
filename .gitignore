@@ -1,5 +1,31 @@
-# Ignore Gradle project-specific cache directory
-.gradle
+# binary files and logs
+*.class
+*.log
 
-# Ignore Gradle build output directory
-build
+# release binaries
+*.zip
+*.tar.gz
+
+# build directories
+.gradle/
+build/
+target/
+dist/
+
+# eclipse generated files
+.project
+.classpath
+.settings/
+
+# IDEA generated files
+.idea
+*.iml
+
+# OSX generated files
+.DS_Store
+
+# JVM crash dumps
+hs_err_pid*
+
+# ignore generated files
+src/gen

@@ -1,0 +1,3 @@
+[submodule "semux-core"]
+	path = semux-core
+	url = https://github.com/semuxproject/semux-core
