@@ -19,7 +19,7 @@ Then, declare `semux-java` as a dependency
 <dependency>
     <groupId>com.github.semuxproject</groupId>
     <artifactId>semux-java</artifactId>
-    <version>267822e3b8</version>
+    <version>{git.commit.id}</version>
 </dependency>
 ```
 
