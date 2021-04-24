@@ -5,7 +5,6 @@ import org.semux.sdk.client.ApiException;
 import org.semux.sdk.client.Configuration;
 import org.semux.sdk.client.api.AccountApi;
 import org.semux.sdk.client.model.GetAccountResponse;
-import org.semux.sdk.crypto.Key;
 
 public class App {
     public static void main(String[] args) {
@@ -15,15 +14,12 @@ public class App {
         client.setBasePath("https://api.semux.info/v2.4.0");
         client.setUsername("test");
         client.setPassword("test");
-
-        // Create a key and address
-        Key key = new Key();
-        String address = key.toAddressString();
+        // client.setDebugging(true);
 
         // Invoke an API
         try {
             AccountApi apiInstance = new AccountApi();
-            GetAccountResponse result = apiInstance.getAccount(address);
+            GetAccountResponse result = apiInstance.getAccount("0x93f158fd14ff520babdbba189693bd85d97e06ed");
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling AccountApi#getAccount");

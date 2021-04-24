@@ -20,14 +20,11 @@ repositories {
 }
 
 dependencies {
+    // Semux Java SDK
+    implementation 'com.github.semuxproject:semux-java:f55798358bf591f1c44df6a3ddad2c915a92c9e1'
+
     // Use JUnit test framework.
     testImplementation 'junit:junit:4.13'
-
-    // This dependency is used by the application.
-    implementation 'com.google.guava:guava:29.0-jre'
-
-    // Semux Java SDK
-    implementation 'com.github.semuxproject:semux-java:267822e3b8'
 }
 
 application {
