@@ -2,7 +2,19 @@
 
 This is the Java SDK for interacting with [Semux Network](https://github.com/semuxproject/semux-core).
 
-## How to use this library?
+## Building from source
+
+Prerequisites:
+- Java 8 or above
+
+Command:
+```shell
+git clone https://github.com/semuxproject/semux-java
+cd semux-java
+./gradlew build
+```
+
+## Using as a library
 
 First, add the Jitpack repository:
 ```
