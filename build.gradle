@@ -48,9 +48,6 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
-// Swagger codegen
-
-
 swaggerSources {
     semux {
         inputFile = file('./semux-core/src/main/resources/org/semux/api/swagger/v2.5.0.yml')
@@ -64,8 +61,11 @@ swaggerSources {
         }
     }
 }
-
 compileJava.dependsOn swaggerSources.semux.code
 sourceSets.main.java.srcDir "${swaggerSources.semux.code.outputDir}/src/main/java"
 sourceSets.main.resources.srcDir "${swaggerSources.semux.code.outputDir}/src/main/resources"
 
+task copySwaggerDocs(type: Copy) {
+    from './build/swagger-code-semux/docs'
+    into './docs'
+}
